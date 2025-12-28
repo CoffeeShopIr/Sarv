@@ -9,7 +9,7 @@ function App() {
   const Router=createBrowserRouter([
     {path:"/Sarv", element:<Root/>,
       children:[
-        {path:"/Sarv", element:<HomePage/>, loader:LoaderTitle},
+        {path:"/", element:<HomePage/>, loader:LoaderTitle},
         {path:"/Sarv/:Detailsid", element:<ProductDetails/>, loader:LoaderDetails}
       ]
     },
