@@ -1,0 +1,20 @@
+import { useRouteLoaderData } from "react-router-dom";
+import Header from "../Components/Header";
+
+export default function HomePage(){
+    const data=useRouteLoaderData("get-Title")
+    return(
+        <>
+            <Header data={data}/>
+        </>
+    )
+}
+export async function LoaderTitle(){
+    const res=await fetch("https://opensheet.elk.sh/1Afmrmd7qaaUtMYapHnbDmW4Ny1feuywlKxW_YvuULKg/headerTitle");
+    if(!res.ok){
+        throw new Error("اطلعات دریافت نشد")
+    }
+    else{
+        return res
+    }
+}

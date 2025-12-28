@@ -1,0 +1,45 @@
+body{
+  background-color: #f6c7a9;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.menu-ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2 , 40%);
+  gap: 20px;
+}
+
+.menu-ul div{
+  padding: 8px 0px;
+  width: 100%;
+}
+.menu-ul li{
+  list-style: none;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  color: white;
+}
+.menu-ul img{
+  width: 150px;
+  height: 100px;
+  position: relative;
+  filter: blur(1px);
+  filter: brightness(45%);
+  border-radius: 15%;
+  box-shadow: 3px 3px 10px #3b2f28;
+}
+.menu-ul a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
