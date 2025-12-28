@@ -2,18 +2,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import HomePage, { LoaderTitle } from "./pages/HomePage"
 import ProductDetails from "./pages/ProductDetails"
 import { LoaderDetails } from "./Components/DetailMenu"
+import Root from "./pages/Root"
 
 
 function App() {
   const Router=createBrowserRouter([
-    {path:"/Sarv", 
-      id:"get-Title",
-      loader:LoaderTitle,
+    {path:"/Sarv", element:<Root/>,
       children:[
-        {path:"", element:<HomePage/>},
+        {path:"/Sarv", element:<HomePage/>, loader:LoaderTitle},
+        {path:"/Sarv/:Detailsid", element:<ProductDetails/>, loader:LoaderDetails}
       ]
     },
-    {path:"/:Detailsid", element:<ProductDetails/>, loader:LoaderDetails}
   ])
   return (
     <>
