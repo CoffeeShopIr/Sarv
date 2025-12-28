@@ -13,7 +13,7 @@ function App() {
         {path:"", element:<HomePage/>},
       ]
     },
-    {path:"/Sarv/:Detailsid", element:<ProductDetails/>, loader:LoaderDetails}
+    {path:"/:Detailsid", element:<ProductDetails/>, loader:LoaderDetails}
   ])
   return (
     <>
