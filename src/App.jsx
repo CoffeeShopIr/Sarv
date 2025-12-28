@@ -6,7 +6,7 @@ import { LoaderDetails } from "./Components/DetailMenu"
 
 function App() {
   const Router=createBrowserRouter([
-    {path:"/", 
+    {path:"/Sarv", 
       id:"get-Title",
       loader:LoaderTitle,
       children:[
