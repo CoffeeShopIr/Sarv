@@ -6,17 +6,24 @@ import Root from "./pages/Root"
 
 
 function App() {
-  const Router=createBrowserRouter([
-    {path:"/Sarv", element:<Root/>,
-      children:[
-        {path:"/", element:<HomePage/>, loader:LoaderTitle},
-        {path:"/Sarv/:Detailsid", element:<ProductDetails/>, loader:LoaderDetails}
-      ]
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Root />,
+      children: [
+        { index: true, element: <HomePage />, loader: LoaderTitle },
+        { path: ":Detailsid", element: <ProductDetails />, loader: LoaderDetails },
+      ],
     },
-  ])
+  ],
+  {
+    basename: "/Sarv",
+  }
+);
   return (
     <>
-      <RouterProvider router={Router}></RouterProvider>
+      <RouterProvider router={router}></RouterProvider>
     </>
   )
 }
