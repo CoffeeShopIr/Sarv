@@ -12,7 +12,6 @@ body{
   grid-template-columns: repeat(2 , 40%);
   gap: 20px;
 }
-
 .menu-ul div{
   padding: 8px 0px;
   width: 100%;
