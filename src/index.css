@@ -3,11 +3,11 @@ body{
   font-family: "Vazirmatn", sans-serif;
 }
 .menu{
-  display: flex;
-  justify-content: center;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2 , 40%);
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   gap: 20px;
 }
 
