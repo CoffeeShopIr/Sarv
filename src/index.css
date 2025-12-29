@@ -23,6 +23,9 @@ body{
   padding: 8px 0px;
   width: 9rem;
   height: 8rem;
+  background-position: center;
+  background-repeat: space;
+  border-radius: 15px;
 }
 
 .menu div a li{
