@@ -2,6 +2,9 @@ import { Link } from "react-router-dom"
 
 export default function Menu({data}){
     console.log(data)
+    function LazyImage({ src}) {
+        return <img src={src} loading="lazy"/>;
+    }
     return(
         <>
             <div className="menu">
@@ -11,7 +14,7 @@ export default function Menu({data}){
                                 <div>
                                     <Link to={item.Title}>
                                         <li key={i}>{item.Title}</li>
-                                        <img src={item.Title+".jpeg"} />
+                                        {LazyImage(item.Title+".jpeg")}
                                     </Link>
                                 </div>
                             </>

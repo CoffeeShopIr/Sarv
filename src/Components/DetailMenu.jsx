@@ -13,7 +13,7 @@ export default function DetailMenu({data}){
                     <div className="munu-detail-tilte">
                         <h3>: قیمت</h3>
                         <hr/>
-                        <h3>: اسم</h3>
+                        <h3>: نام</h3>
                     </div>
                     <hr/>
                     {data && data.map((items,i)=>{
