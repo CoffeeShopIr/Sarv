@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 
 export default function DetailMenu({data}){
-    const params=useParams()
+    const {id}=useParams()
     console.log(data)
     
     return(
@@ -9,7 +9,7 @@ export default function DetailMenu({data}){
             <section className="menu-detail">
                 
                 <div className="menu-border">
-                    <h1>{params.Detailsid}</h1>
+                    <h1>{id}</h1>
                     <div className="munu-detail-tilte">
                         <h3>: قیمت</h3>
                         <hr/>
@@ -34,7 +34,7 @@ export default function DetailMenu({data}){
 
 
 export async function LoaderDetails({request , params}){
-    const detailId = params.Detailsid
+    const detailId = params.id
     const res=await fetch("https://opensheet.elk.sh/1Afmrmd7qaaUtMYapHnbDmW4Ny1feuywlKxW_YvuULKg/" + detailId)
     if(!res.ok){
         throw new Error("اطلاعات دریافت نشد")
