@@ -5,7 +5,6 @@ export default function Menu({data}){
     return(
         <>
             <div className="menu">
-                <ul className="menu-ul">
                     {data && data.map((item,i)=>{
                         return(
                             <>
@@ -19,7 +18,6 @@ export default function Menu({data}){
 
                         )
                     })}
-                </ul>
 
             </div>
         </>

@@ -6,20 +6,18 @@ body{
   display: flex;
   justify-content: center;
   width: 100%;
-}
-.menu-ul {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2 , 40%);
   gap: 20px;
 }
-.menu-ul div{
+
+.menu div{
   padding: 8px 0px;
-  width: 10rem;
+  width: 9rem;
   height: 8rem;
 }
 
-.menu-ul li{
+.menu li{
   list-style: none;
   z-index: 1;
   display: flex;
@@ -27,9 +25,10 @@ body{
   align-items: center;
   color: white;
   position: absolute;
-  height: 14%;
+  height: 20%;
+  
 }
-.menu-ul img{
+.menu img{
   width: 100%;
   height: 100%;
   filter: blur(1px);
@@ -37,7 +36,7 @@ body{
   border-radius: 15%;
   box-shadow: 3px 3px 10px #3b2f28;
 }
-.menu-ul a{
+.menu a{
   height: 100%;
   text-decoration: none;
   color: black;
@@ -62,10 +61,11 @@ body{
 .munu-detail-tilte{
   display: grid;
   justify-content: end;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 35% 30% 35%;
   background-color: #1d1a16;
-  padding: 0px;
+  padding: 3px 0px;
   place-items: center;
+  border-radius: 5px;
   
 }
 .munu-detail-tilte h3{
@@ -79,11 +79,12 @@ body{
   text-align: center;
   border-radius: 7px;
   padding: 5px 0px;
+  color: #1d1a16;
 }
 .menu-detail-menu{
   display: grid;
   justify-content: end;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 35% 30% 35%;
   margin-bottom: 10px;
   background-color: #1d1a16;
   padding: 7px;
