@@ -27,7 +27,7 @@ export default function RootNavaigation() {
             <NavLink to="بار سرد" className={({isActive})=> isActive ? "action" : "none"}>بار سرد</NavLink>
           </div>
           <div className="NavigationLink">
-            <NavLink to="کیک" className={({isActive})=> isActive ? "action" : "none"}>کیک</NavLink>
+            <NavLink to="کیک" className={({isActive})=> isActive ? "action" : "none"}><img src="cake.png"/>کیک</NavLink>
           </div>
         </div>
       </div>
