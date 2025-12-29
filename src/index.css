@@ -1,10 +1,4 @@
-html {
-  height: 100%;
-}
 body{
-  height: 100%;
-  padding: 10px 15px;
-  margin: 0;
   background-color: #29251c;
   font-family: "Vazirmatn", sans-serif;
 }
@@ -13,9 +7,7 @@ body{
   justify-content: center;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(2 , 40%);
   gap: 20px;
 }
 
@@ -23,20 +15,17 @@ body{
   padding: 8px 0px;
   width: 9rem;
   height: 8rem;
-  background-position: center;
-  background-repeat: space;
-  background-size: cover;
-  border-radius: 15px;
 }
 
-.menu div a li{
+.menu li{
   list-style: none;
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: white;
   position: absolute;
+  height: 20%;
   
 }
 .menu img{
@@ -53,7 +42,6 @@ body{
   color: black;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .menu-detail{
