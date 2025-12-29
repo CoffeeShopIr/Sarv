@@ -1,4 +1,10 @@
+html {
+  height: 100%;
+}
 body{
+  height: 100%;
+  padding: 10px 15px;
+  margin: 0;
   background-color: #29251c;
   font-family: "Vazirmatn", sans-serif;
 }
@@ -7,7 +13,9 @@ body{
   justify-content: center;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2 , 40%);
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -17,15 +25,14 @@ body{
   height: 8rem;
 }
 
-.menu li{
+.menu div a li{
   list-style: none;
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(255, 255, 255);
   position: absolute;
-  height: 20%;
   
 }
 .menu img{
@@ -42,6 +49,7 @@ body{
   color: black;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .menu-detail{
@@ -150,4 +158,10 @@ body{
 .action{
   background-color: rgba(105, 105, 105, 0.384);
   color: yellow;
+}
+@media only screen and (max-width: 360px){
+  
+  .menu {
+  grid-template-columns: 1fr;
+  }
 }
