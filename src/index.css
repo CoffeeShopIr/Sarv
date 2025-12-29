@@ -1,5 +1,6 @@
 body{
-  background-color: #f6c7a9;
+  background-color: #29251c;
+  font-family: "Vazirmatn", sans-serif;
 }
 .menu{
   display: flex;
@@ -42,4 +43,67 @@ body{
   color: black;
   display: flex;
   justify-content: center;
+}
+
+.menu-detail{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.menu-border{
+  padding: 4%;
+  width: 100%;
+  background-color: #3b2f2842;
+  
+  box-shadow: 3px 3px 10px #1d1d1d;
+  border-radius: 3%;
+  
+}
+.munu-detail-tilte{
+  display: grid;
+  justify-content: end;
+  grid-template-columns: 30% 40% 30%;
+  background-color: #1d1a16;
+  padding: 0px;
+  place-items: center;
+  
+}
+.munu-detail-tilte h3{
+  height:auto;
+  padding: 5px;
+  margin: 0px;
+  color: whitesmoke;
+}
+.menu-border h1{
+  background-color: hsl(46, 100%, 51%);
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 0px;
+}
+.menu-detail-menu{
+  display: grid;
+  justify-content: end;
+  grid-template-columns: 30% 40% 30%;
+  margin-bottom: 10px;
+  background-color: #1d1a16;
+  padding: 7px;
+  border-radius: 5px;
+}
+.menu-detail-menu:hover{
+  background-color: #ffc40475;
+}
+.menu-detail div div li{
+  padding: 5px 2px;
+  background-color: #312c1d;
+  border-radius: 7px;
+  list-style: none;
+  text-align: center;
+  color: white;
+}
+
+.menu-detail div div li:first-child{
+  color: #ffc404;
+}
+.menu-detail div div li:last-child{
+  font-size: larger;
 }
