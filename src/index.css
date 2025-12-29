@@ -94,6 +94,9 @@ body{
   background-color: #ffc40475;
 }
 .menu-detail div div li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px 2px;
   background-color: #312c1d;
   border-radius: 7px;
@@ -107,4 +110,41 @@ body{
 }
 .menu-detail div div li:last-child{
   font-size: larger;
+}
+
+/*     Navigation         */
+.Navigation{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.NavgationGrid{
+  display: grid;
+  grid-template-columns: repeat(8 , 26%);
+  justify-content: start;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 95%;
+  
+}
+.NavigationLink{
+  padding-bottom: 10px;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Navigation a{
+  /* background-color: black; */
+  padding: 4px 10px;
+  text-decoration: none;
+  color: white;  
+  box-shadow: 3.2px 3.2px 10px #1d1d1d;
+  border-radius: 10px;
+}
+.action{
+  background-color: rgba(105, 105, 105, 0.384);
+  color: yellow;
 }
