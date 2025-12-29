@@ -25,6 +25,7 @@ body{
   height: 8rem;
   background-position: center;
   background-repeat: space;
+  background-size: cover;
   border-radius: 15px;
 }
 
