@@ -8,11 +8,11 @@ import Root from "./pages/Root"
 function App() {
 const router = createHashRouter(
   [
+    { path:"/", element: <HomePage />, loader:LoaderTitle},
     {
       path: "/",
       element: <Root />,
       children: [
-        { index: true, element: <HomePage />, loader:LoaderTitle},
         { path: ":id", element: <ProductDetails />, loader:LoaderDetails},
       ],
     },
