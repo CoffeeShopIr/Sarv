@@ -1,6 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useRouteLoaderData } from "react-router-dom";
 
 export default function RootNavaigation() {
+  const Data=useRouteLoaderData("DataTitle")
+
   return (
     <>
       <div className="Navigation">
@@ -8,27 +10,15 @@ export default function RootNavaigation() {
           <div className="NavigationLink">
             <NavLink to="" className={({isActive})=> isActive ? "action" : "none"} end ><img src="home.png"/>خانه</NavLink>
           </div>
-          <div className="NavigationLink" >
-            <NavLink to="اسپرسوبار" className={({isActive})=> isActive ? "action" : "none"}><img src="coffee.png"/>اسپرسوبار</NavLink>
-          </div>
-          <div className="NavigationLink">
-            <NavLink to="نوشیدنی گرم" className={({isActive})=> isActive ? "action" : "none"}><img src="hotdrink.png"/>نوشیدنی گرم</NavLink>
-          </div>
-          <div className="NavigationLink">
-            <NavLink to="دمنوش" className={({isActive})=> isActive ? "action" : "none"}><img src="damnosh.png"/>دمنوش</NavLink>
-          </div>
-          <div className="NavigationLink">
-            <NavLink to="آیس کافی" className={({isActive})=> isActive ? "action" : "none"}><img src="icecoffee.png"/>آیس کافی</NavLink>
-          </div>
-          <div className="NavigationLink">
-            <NavLink to="میلک شیک" className={({isActive})=> isActive ? "action" : "none"}><img src="milkshake.png"/>میلک شیک</NavLink>
-          </div>
-          <div className="NavigationLink">
-            <NavLink to="بار سرد" className={({isActive})=> isActive ? "action" : "none"}><img src="coldbar.png"/>بار سرد </NavLink>
-          </div>
-          <div className="NavigationLink">
-            <NavLink to="کیک" className={({isActive})=> isActive ? "action" : "none"}><img src="cake.png"/>کیک</NavLink>
-          </div>
+          {Data?.map((item, index)=>{
+            return(
+                <div className="NavigationLink" >
+                  <NavLink to={item.Title} className={({isActive})=> isActive ? "action" : "none"}>{item.Title}</NavLink>
+                  <img src={item.Title+".webp"}/>
+                </div>
+            )
+          })}
+
         </div>
       </div>
     </>

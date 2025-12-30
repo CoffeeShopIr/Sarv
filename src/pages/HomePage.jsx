@@ -1,8 +1,8 @@
-import { useLoaderData } from "react-router-dom";
+import { useRouteLoaderData } from "react-router-dom";
 import Header from "../Components/Header";
 import Menu from "../Components/Menu";
 export default function HomePage(){
-    const data=useLoaderData()
+    const data=useRouteLoaderData("DataTitle")
     return(
         <>
             <Header data={data}/>
