@@ -20,7 +20,7 @@ export default function DetailMenu({data}){
                         return(
                             <div className="menu-detail-menu" key={i}>
                                 <li>{Number(items.Price).toLocaleString("en")}</li>
-                                <hr/>
+                                <div></div>
                                 <li>{items.Name}</li>
                             </div>
                         )

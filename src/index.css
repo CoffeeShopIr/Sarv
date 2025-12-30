@@ -146,6 +146,7 @@ header{
   justify-content: end;
   grid-template-columns: 35% 30% 35%;
   margin-bottom: 10px;
+  align-items: center;
   background-color: #1d1a16;
   padding: 7px;
   border-radius: 5px;
@@ -163,6 +164,7 @@ header{
   list-style: none;
   text-align: center;
   color: white;
+  justify-items: center;
 }
 
 .menu-detail div div li:first-child{
@@ -171,7 +173,6 @@ header{
 .menu-detail div div li:last-child{
   font-size: larger;
 }
-
 /*     Navigation         */
 .Navigation{
   width: 100%;
@@ -191,21 +192,23 @@ header{
 }
 .NavigationLink{
   margin-top: 16px;
-  padding-bottom: 10px;
-  display: flex;
-  justify-content: center;
+  margin: 10px;
   width: 100%;
   position: relative;
 }
 .NavigationLink a{
+  display: flex;
+  justify-content: center;
   padding: 4px 10px;
   text-decoration: none;
   color: white;  
-  position: absolute;
-  z-index: 9999;
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: center;
+}
+.NavigationLink a h5{
+    position: absolute;
+  z-index: 9999;
 }
 .NavigationLink img{
   z-index: -1;
@@ -213,11 +216,10 @@ header{
   height: 90px;
   position: relative;
   border-radius: 8px;
-  filter: brightness(35%);
+  filter: brightness(50%);
 }
-.action{
-  background-color: rgba(105, 105, 105, 0.384);
-  color: yellow;
+.action img{
+  filter: brightness(90%);
 }
 @media only screen and (max-width: 360px){
   
