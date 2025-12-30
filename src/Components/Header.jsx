@@ -28,7 +28,7 @@ export default function Header({data}){
                     {data?.map((item,index)=>{
                         // console.log(index===slider && item)
                         return(
-                                <img key={index} src={index===slider && item.Tittle+".jpeg"}/>
+                                <img key={index} src={index===slider && item.Title+".jpeg"}/>
                         )
                     })}
                     <img src="دمنوش.jpeg"/>
