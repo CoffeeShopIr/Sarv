@@ -10,7 +10,10 @@ body{
   align-items: center;
   gap: 20px;
 }
-
+.lastItem div:last-child{
+  grid-column: 1/-1;
+  width: 100%;
+}
 .menu div{
   padding: 8px 0px;
   width: 9rem;
