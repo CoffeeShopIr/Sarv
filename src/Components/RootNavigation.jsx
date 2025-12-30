@@ -10,7 +10,7 @@ export default function RootNavaigation() {
           <div className="NavigationLink">
             <NavLink to="" className={({isActive})=> isActive ? "action" : "none"} end >
               <h5>خانه</h5>
-              <img src="home.png"/>
+              <img src="sarv.jpg"/>
             </NavLink>
           </div>
           {Data?.map((item, index)=>{

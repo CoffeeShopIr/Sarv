@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react"
+import Modal from "./Modal"
 
 
 export default function Header({data}){
     const [slider,setSlider]=useState(0)
+    const [open , setOpen]=useState(false)
+
     useEffect(()=>{
         let Time=setTimeout(()=>{
             setSlider(prev=>{
@@ -16,18 +19,26 @@ export default function Header({data}){
         return ()=> clearTimeout(Time)
         },6000)
     },[slider])
-    console.log(data[slider])
+
+    function handelOpenModal(){
+        setOpen(prev=>!prev)
+    }
+    function handelCloseModa(){
+        setOpen(prev=>!prev)
+    }
     return(
         <>
             <header>
                 <div className="centerItem">
                     <h1>Sarv</h1>
                     <p>hellow welcome to SarvCoffeShop</p>
-                    <button>About</button>
+                    <button onClick={()=>handelOpenModal()}>درباره ما</button>
                 </div>
                 <div className="backImg">
                     <img src={data[slider].Title+".webp"}/>
-                    
+                    <Modal open={open} handelCloseModa={handelCloseModa}>
+                        <h1>hello</h1>
+                    </Modal>
                 </div>
             </header>
         </>
