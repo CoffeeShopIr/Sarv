@@ -26,7 +26,7 @@ export default function Header({data}){
                     <button>About</button>
                 </div>
                 <div className="backImg">
-                    <img src={data[slider].Title+".jpeg"}/>
+                    <img src={data[slider].Title+".webp"}/>
                     
                 </div>
             </header>

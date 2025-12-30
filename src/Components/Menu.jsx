@@ -15,7 +15,7 @@ export default function Menu({data}){
                                 <div>
                                     <Link to={item.Title}>
                                         <li key={i}>{item.Title}</li>
-                                        <img src={item.Title+".jpeg"} />
+                                        <img src={item.Title+".webp"} />
                                     </Link>
                                 </div>
                             </>
