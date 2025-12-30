@@ -16,7 +16,7 @@ export default function Header({data}){
         return ()=> clearTimeout(Time)
         },6000)
     },[slider])
-    // console.log(data[slider])
+    console.log(data[slider])
     return(
         <>
             <header>
