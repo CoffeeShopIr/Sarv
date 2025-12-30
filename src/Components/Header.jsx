@@ -16,6 +16,7 @@ export default function Header({data}){
         return ()=> clearTimeout(Time)
         },6000)
     },[slider])
+    // console.log(data[slider])
     return(
         <>
             <header>
@@ -25,13 +26,8 @@ export default function Header({data}){
                     <button>About</button>
                 </div>
                 <div className="backImg">
-                    {data?.map((item,index)=>{
-                        // console.log(index===slider && item)
-                        return(
-                                <img key={index} src={index===slider && item.Title+".jpeg"}/>
-                        )
-                    })}
-                    <img src="دمنوش.jpeg"/>
+                    <img src={data[slider].Title+".jpeg"}/>
+                    
                 </div>
             </header>
         </>
