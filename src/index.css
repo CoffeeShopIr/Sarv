@@ -190,8 +190,7 @@ header{
   
 }
 .NavigationLink{
-  padding-bottom: 10px;
-  margin: 10px 0px;
+  margin-top: 16px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -202,9 +201,16 @@ header{
   text-decoration: none;
   color: white;  
   position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .NavigationLink img{
+  width: 90px;
+  height: 90px;
   position: relative;
+  border-radius: 8px;
+  filter: brightness(35%);
 }
 .action{
   background-color: rgba(105, 105, 105, 0.384);

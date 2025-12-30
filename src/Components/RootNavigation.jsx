@@ -8,7 +8,8 @@ export default function RootNavaigation() {
       <div className="Navigation">
         <div className="NavgationGrid">
           <div className="NavigationLink">
-            <NavLink to="" className={({isActive})=> isActive ? "action" : "none"} end ><img src="home.png"/>خانه</NavLink>
+            <NavLink to="" className={({isActive})=> isActive ? "action" : "none"} end >خانه</NavLink>
+            <img src="home.png"/>
           </div>
           {Data?.map((item, index)=>{
             return(
