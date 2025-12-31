@@ -267,6 +267,7 @@ dialog::backdrop {
   color: black;
 }
 .ModalInfoDiv h3{
+  font-weight: 500;
   font-size: large;
 }
 .ModalInfoDiv p{
