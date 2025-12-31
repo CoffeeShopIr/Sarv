@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 
 export default function Menu({data}){
     let lastItem=""
-    if(data.length /2!==0){
-        lastItem="lastItem"
+    if((data.length/2) !== 0){
+        lastItem="lastItem";
     }
     return(
         <>

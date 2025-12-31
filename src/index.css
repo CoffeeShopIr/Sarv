@@ -65,13 +65,13 @@ header{
 }
 .lastItem div:last-child{
   grid-column: 1/-1;
-  width: 90%;
-  height: 10rem;
+  /* width: 90%;
+  height: 10rem; */
 }
 
 .menu div{
   padding: 8px 0px;
-  width: 9rem;
+  width: 75%;
   height: 8rem;
 }
 
@@ -252,6 +252,9 @@ dialog::backdrop {
 @media only screen and (max-width: 360px){
   
   .menu {
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
+  .menu div{
+    height: 6rem;
+}
 }
