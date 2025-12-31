@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Modal from "./Modal"
+import ModalInfo from "./ModalInfo"
 
 
 export default function Header({data}){
@@ -37,7 +38,7 @@ export default function Header({data}){
                 <div className="backImg">
                     <img src={data[slider].Title+".webp"}/>
                     <Modal open={open} handelCloseModa={handelCloseModa}>
-                        <h1>hello</h1>
+                        <ModalInfo/>
                     </Modal>
                 </div>
             </header>
