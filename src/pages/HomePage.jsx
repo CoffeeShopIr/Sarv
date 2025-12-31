@@ -1,12 +1,14 @@
 import { useRouteLoaderData } from "react-router-dom";
 import Header from "../Components/Header";
 import Menu from "../Components/Menu";
+import Footer from "../Components/Footer";
 export default function HomePage(){
     const data=useRouteLoaderData("DataTitle")
     return(
         <>
             <Header data={data}/>
             <Menu data={data}/>
+            <Footer/>
         </>
     )
 }
