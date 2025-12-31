@@ -12,7 +12,7 @@ export default function ModalInfo(){
                     <h3>09197038720</h3>
                 </div>
                 <div className="ModalInfoDiv">
-                    <img src="instagram.png" />
+                    <img src="location.png" />
                     <p>شهریار,کوچه معلم ,کافه سرو</p>
                 </div>
             </div>
