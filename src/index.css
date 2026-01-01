@@ -42,7 +42,8 @@ header{
   z-index: 9999;
 }
 .centerItem h1{
-  font-size: 3rem;
+  height: 85px;
+  font-size: 4rem;
   font-family: "reamkufi";
   color: rgb(255, 255, 255);
 }
