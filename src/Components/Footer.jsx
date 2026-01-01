@@ -5,15 +5,15 @@ export default function Footer(){
             <div className="footer">
                 <div className="information">
                     <div>
-                        <img src="/instagram.png" alt="instagram icon" />
+                        <img src="/instagram.png" />
                         <p><strong>اینستاگرام: </strong><a href="instagramURL">@instaPageId</a></p>
                     </div>
                     <div>
-                        <img src="/phone.png" alt="phone icon" />
+                        <img src="/phone.png"  />
                         <p><strong>تلفن: </strong>6969 8585 021</p>
                     </div>
                     <div>
-                        <img src="/location.png" alt="location icon" />
+                        <img src="/location.png" />
                         <p><strong>آدرس:</strong> اندیشه، خیابان فلان، کوچه بهمان، پلاک 77</p>
                     </div>
                 </div>
