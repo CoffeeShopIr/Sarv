@@ -235,7 +235,7 @@ dialog::backdrop {
   background: rgba(0, 0, 0, 0.5);
 }
 .Modal{
-  width: 10rem;
+  width: auto;
   border: none;
   transform: translate(-50% -50%);
   border-radius: 5px;
@@ -251,6 +251,34 @@ dialog::backdrop {
   border: none;
   background-color: #16120f00;
 }
+.ModalInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ModalInfoDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.ModalInfoDiv img{
+  width: 20px;
+  box-shadow: none;
+  margin-top: 5px;
+}
+.ModalInfoDiv a{
+  text-decoration: none;
+  color: black;
+}
+.ModalInfoDiv h3{
+  font-weight: 500;
+  font-size: large;
+}
+.ModalInfoDiv p{
+  color: #16120fe0;
+}
+/* ----------------------- */
 .action img{
   filter: brightness(90%);
 }
