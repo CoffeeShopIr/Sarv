@@ -304,7 +304,7 @@ dialog::backdrop {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 90%;
+  width: 100%;
 }
 .information div {
   display: flex;
@@ -312,6 +312,10 @@ dialog::backdrop {
   align-items: center;
   gap: 4px;
   width: 90%;
+}
+.information div img{
+  width: 23px;
+  box-shadow: none;
 }
 .information div p a {
   color: #ffd69c;
