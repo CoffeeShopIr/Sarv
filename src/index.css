@@ -266,6 +266,7 @@ dialog::backdrop {
   width: 20px;
   box-shadow: none;
   margin-top: 5px;
+  filter: none;
 }
 .ModalInfoDiv a{
   text-decoration: none;
