@@ -309,7 +309,7 @@ dialog::backdrop {
 .information div {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
   gap: 4px;
   width: 90%;
 }
