@@ -285,7 +285,7 @@ dialog::backdrop {
 }
 /* ----------footer----------- */
 .footer {
-  font-size: 1.1em;
+  font-size:0.85em;
   font-family: amiriItalic;
   width: 100%;
   margin-top: 20px;
