@@ -2,9 +2,15 @@
   padding: 0px;
   margin: 0px;
 }
+@font-face {
+  font-family: "reamKufi";
+  src: url("./assets/fonts/amiriItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body{
   background-color: #29251c;
-  font-family: "Vazirmatn", sans-serif;
+  font-family: "reamKufi", sans-serif;
 }
 header{
 /* 
@@ -12,11 +18,6 @@ header{
   height: 95vh;
   padding-bottom: 50px;
   position: relative;
-}
-@font-face {
-    font-family: amiriItalic;
-    src: url(../assets/fonts/amiriItalic.ttf) format(TrueType);
-    font-weight: 500;
 }
 .backImg{
   height: 100%;
@@ -42,12 +43,14 @@ header{
 }
 .centerItem h1{
   font-size: 3rem;
+  font-family: "reamkufi";
   color: rgb(255, 255, 255);
 }
 .centerItem p{
+
   font-size: small;
   color: rgba(158, 158, 158, 0.678);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "reamKufi";
 }
 .centerItem button{
   padding: 5px 15px;
@@ -261,6 +264,7 @@ dialog::backdrop {
   flex-direction: column;
   align-items: center;
   padding: 5px;
+  font-family: "reamKufi";
 }
 .ModalInfoDiv img{
   width: 20px;
@@ -286,7 +290,7 @@ dialog::backdrop {
 /* ----------footer----------- */
 .footer {
   font-size:0.85em;
-  font-family: amiriItalic;
+  font-family: "reamKufi";
   width: 100%;
   margin-top: 20px;
   padding: 15px 0px;
