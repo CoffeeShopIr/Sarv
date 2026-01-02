@@ -2,7 +2,7 @@ import { useEffect, useEffectEvent, useState } from "react"
 import { Link } from "react-router-dom"
 import { Categuries } from "../data"
 
-export default function Menu(){
+export default function Menu({HandelsetImg}){
     const [myUrl,setMyUrl]=useState("1Afmrmd7qaaUtMYapHnbDmW4Ny1feuywlKxW_YvuULKg")
     const [Styel,setStyel]=useState(0)
     const [loading,setLoading]=useState(false)
@@ -11,6 +11,7 @@ export default function Menu(){
         setStyel(i)
         setMyUrl(url)
     }
+    
     useEffect(()=>{
         async function getfetch(){
             setLoading(true)
@@ -18,6 +19,7 @@ export default function Menu(){
                 const res=await fetch("https://opensheet.elk.sh/"+myUrl+"/headerTitle")
                 const response=await res.json()
                 setData(response)
+                HandelsetImg(response)
             }catch(err){
                 throw new Error("اطلاعات دریافت نشد")
             }
@@ -39,7 +41,7 @@ export default function Menu(){
                     )
                 })}
             </div>
-            {loading && <h2 style={{textAlign:"center"}}>...Loading</h2>}
+            {loading && <h2 style={{textAlign:"center"}}>Loading...</h2>}
             {data.length>0 &&
                 <div className={`menu ${lastItem}`}>
                     {data && data.map((item,i)=>{
