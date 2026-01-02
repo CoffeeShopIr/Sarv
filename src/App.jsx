@@ -1,22 +1,17 @@
 import { createHashRouter, RouterProvider } from "react-router-dom"
-import HomePage, { LoaderTitle } from "./pages/HomePage"
-import ProductDetails from "./pages/ProductDetails"
-import { LoaderDetails } from "./Components/DetailMenu"
-import Root from "./pages/Root"
+import HomePage from "./pages/HomePage"
+import ProductDetails, { LoaderDetails, LoaderTitle } from "./pages/ProductDetails"
+
 
 
 function App() {
 const router = createHashRouter(
   [
-    {path:"/" , loader:LoaderTitle , id:"DataTitle" ,children:[
+    {path:"/"  ,children:[
       { path:"/", element: <HomePage />},
-      {
-        path: "/",
-        element: <Root />,
-        children: [
-          { path: ":id", element: <ProductDetails />, loader:LoaderDetails},
-        ],
-      },
+      {path:"/" , loader:LoaderTitle,id:"TitleId" ,children:[
+        { path: ":id/:products", element: <ProductDetails />, loader:LoaderDetails},
+      ]}
     ]}
   ],
 );

@@ -63,6 +63,30 @@ header{
 
 }
 /* -----------Menu----------- */
+.categuriesButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.CtBtn{
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 15px 10%;
+  background-color: #16120f6c;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "reamKufi";
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px #ffffff7b;
+}
+.red{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 5px #0000007b;
+  color: black;
+}
 .menu{
   width: 100%;
   display: grid;
