@@ -37,7 +37,7 @@ export default function Header({data}){
                     <button onClick={()=>handelOpenModal()}>درباره ما</button>
                 </div>
                 <div className="backImg">
-                    {data.length>0 ?<img src={data[slider].Title+".webp"}/> : <img src="sarv.jpg" />}
+                    {data.length>3 ?<img src={data[slider].Title+".webp"}/> : <img src="sarv.jpg" />}
                     <Modal open={open} handelCloseModa={handelCloseModa}>
                         <ModalInfo/>
                     </Modal>
