@@ -1,6 +1,6 @@
 import { createHashRouter, RouterProvider } from "react-router-dom"
 import HomePage from "./pages/HomePage"
-import ProductDetails, { LoaderDetails, LoaderTitle } from "./pages/ProductDetails"
+constimport ProductDetails, { LoaderDetails, LoaderTitle } from "./pages/ProductDetails"
 
 
 
