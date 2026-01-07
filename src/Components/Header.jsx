@@ -33,7 +33,7 @@ export default function Header(){
             <header>
                 <div className="centerItem">
                     <h1>Sarv</h1>
-                    <p>به کافه سرو خوش آمدید</p>
+                    
                     <button onClick={()=>handelOpenModal()}>درباره ما</button>
                 </div>
                 <div className="backImg">
