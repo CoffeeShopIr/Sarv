@@ -4,6 +4,14 @@ export default function Footer(){
             <div className="footer">
                 <div className="information">
                     <div>
+                        <img alt="snappfood_fa_logotype.svg" src="https://cdn.snappfood.ir/pwa/assets/branding/snappfood_fa_logotype.svg" loading="lazy"/>
+                        <p><strong>اسنپ فود: </strong>
+                            <a href="https://m.snappfood.ir/restaurant/menu/%DA%A9%D8%A7%D9%81%D9%87_%D8%B1%D8%B3%D8%AA%D9%88%D8%B1%D8%A7%D9%86_%D8%B3%D8%B1%D9%88-r-e5enl5?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNTY3MDY3MzQzMzUyNDI3AAGn6VK8BqQZCUSd113Rjg6xvrK5tV4oM6P1qzaZwZeeZdyCto13klhqr3sKX0Q_aem_Ad74uzMJHN3wZwGKh9RHNw">
+                                سفارش آنلاین 
+                            </a>
+                        </p>
+                    </div>
+                    <div>
                         <img src="instagram.png" />
                         <p><strong>اینستاگرام: </strong><a href="https://www.instagram.com/sarv.cafe?igsh=MWY3aGtpdHQ3NWl3dg==">sarv.cafe</a></p>
                     </div>
