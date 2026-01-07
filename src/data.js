@@ -15,7 +15,7 @@ export const Categuries=[
         categuries:"breakfast"
     },
     {
-        Title:"قلیون",
+        Title:"قلیان",
         Url:"1WLPwqTiprCbTEmcIhGK3XDvbCEGtMnFNnGln1jYB4gg",
         categuries:"hookah"
     }
