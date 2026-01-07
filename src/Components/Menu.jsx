@@ -16,6 +16,7 @@ export default function Menu() {
     seTtitle(title);
   }
   const filtering = data.filter((item) => item[title]);
+  let lastItem=""
   if (data.length / 2 !== 0) {
     lastItem = "lastItem";
   }
