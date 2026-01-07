@@ -13,7 +13,7 @@ export default function ModalInfo(){
                 </div>
                 <div className="ModalInfoDiv">
                     <img src="location.png" />
-                    <p>شهریار , میدان معلم , خیابان معلم , نبش کوچه تربیت بدنی , کافه سرو</p>
+                    <p>شهریار,میدان معلم,خیابان معلم, نبش کوچه تربیت بدنی,کافه سرو</p>
                 </div>
             </div>
         </>
