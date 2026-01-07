@@ -40,14 +40,14 @@ export async function LoaderAllData() {
       throw new Response("Fetch error", { status: 500 });
     }
 
-    const [cafe, food, breakfast, hooka] =
+    const [cafe, food, breakfast, hookah] =
       await Promise.all(responses.map(res => res.json()));
 
     cachedData = [
       {cafe},
       {food},
       {breakfast},
-      {hooka},
+      {hookah},
     ];
 
     return cachedData;
