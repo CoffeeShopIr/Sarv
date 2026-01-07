@@ -1,5 +1,5 @@
 import { createHashRouter, RouterProvider } from "react-router-dom"
-import HomePage from "./pages/HomePage"
+import HomePage, { LoaderAllData } from "./pages/HomePage"
 import ProductDetails, { LoaderDetails, LoaderTitle } from "./pages/ProductDetails"
 
 
@@ -7,7 +7,7 @@ import ProductDetails, { LoaderDetails, LoaderTitle } from "./pages/ProductDetai
 function App() {
 const router = createHashRouter(
   [
-    {path:"/"  ,children:[
+    {path:"/" , loader:LoaderAllData , id:"Data" ,children:[
       { path:"/", element: <HomePage />},
       {path:"/" , loader:LoaderTitle,id:"TitleId" ,children:[
         { path: ":id/:products", element: <ProductDetails />, loader:LoaderDetails},

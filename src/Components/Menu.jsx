@@ -1,64 +1,55 @@
-import { useEffect, useEffectEvent, useState } from "react"
-import { Link } from "react-router-dom"
-import { Categuries } from "../data"
+import { useState } from "react";
+import { Link, useRouteLoaderData } from "react-router-dom";
+import { Categuries } from "../data";
 
-export default function Menu({HandelsetImg}){
-    const [myUrl,setMyUrl]=useState("1Afmrmd7qaaUtMYapHnbDmW4Ny1feuywlKxW_YvuULKg")
-    const [Styel,setStyel]=useState(0)
-    const [loading,setLoading]=useState(false)
-    const [data , setData]=useState([])
-    function handelSubmit(url,i){
-        setStyel(i)
-        setMyUrl(url)
-    }
-    
-    useEffect(()=>{
-        async function getfetch(){
-            setLoading(true)
-            try{
-                const res=await fetch("https://opensheet.elk.sh/"+myUrl+"/headerTitle")
-                const response=await res.json()
-                setData(response)
-                HandelsetImg(response)
-            }catch(err){
-                throw new Error("اطلاعات دریافت نشد")
-            }
-            setLoading(false)
-        }
-        getfetch()
-    },[myUrl])
-    console.log(data)
-    let lastItem=""
-    if((data.length/2) !== 0){
-        lastItem="lastItem";
-    }
-    return(
-        <>
-            <div className="categuriesButton">
-                {Categuries?.map((item,i)=>{
-                    return(
-                        <button className={`CtBtn ${i === Styel && "red"}`} onClick={()=>handelSubmit(item.Url,i)}>{item.Title}</button>
-                    )
-                })}
-            </div>
-            {loading && <h2 style={{textAlign:"center"}}>Loading...</h2>}
-            {data.length>0 &&
-                <div className={`menu ${lastItem}`}>
-                    {data && data.map((item,i)=>{
-                        return(
-                            <>
-                                <div>
-                                    <Link to={`${myUrl}/${item.Title}`}>
-                                        <li key={i}>{item.Title}</li>
-                                        <img src={item.Title+".webp"} />
-                                    </Link>
-                                </div>
-                            </>
+export default function Menu() {
+  const data = useRouteLoaderData("Data");
+  const [myUrl, setMyUrl] = useState(
+    "1Afmrmd7qaaUtMYapHnbDmW4Ny1feuywlKxW_YvuULKg"
+  );
+  const [Styel, setStyel] = useState(0);
+  const [title, seTtitle] = useState("cafe");
 
-                        )
-                    })}
-
-            </div>}
-        </>
-    )
+  function handelSubmit(url, i, title) {
+    setStyel(i);
+    setMyUrl(url);
+    seTtitle(title);
+  }
+  const filtering = data.filter((item) => item[title]);
+  if (data.length / 2 !== 0) {
+    lastItem = "lastItem";
+  }
+  return (
+    <>
+      <div className="categuriesButton">
+        {Categuries?.map((item, i) => {
+          return (
+            <button
+              className={`CtBtn ${i === Styel && "red"}`}
+              onClick={() => handelSubmit(item.Url, i, item.categuries)}
+            >
+              {item.Title}
+            </button>
+          );
+        })}
+      </div>
+      {data && (
+        <div className={`menu ${lastItem}`}>
+          {filtering[0][title]?.map((prev, i) => {
+            console.log(prev);
+            return (
+              <>
+                <div>
+                  <Link to={`${myUrl}/${prev.Title}`}>
+                    <li key={i}>{prev.Title}</li>
+                    <img src={prev.Title + ".webp"} />
+                  </Link>
+                </div>
+              </>
+            );
+          })}
+        </div>
+      )}
+    </>
+  );
 }

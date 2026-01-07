@@ -1,18 +1,22 @@
 export const Categuries=[
     {
         Title:"کافه",
-        Url:"1Afmrmd7qaaUtMYapHnbDmW4Ny1feuywlKxW_YvuULKg"
+        Url:"1Afmrmd7qaaUtMYapHnbDmW4Ny1feuywlKxW_YvuULKg",
+        categuries:"cafe"
     },
     {
         Title:"غذا",
-        Url:"1DAYyJewlLqCcQ6bT3BlrRQQYlIgFVZEhT1nDoX9j5Vo"
+        Url:"1DAYyJewlLqCcQ6bT3BlrRQQYlIgFVZEhT1nDoX9j5Vo",
+        categuries:"food"
     },
     {
         Title:"صبحانه",
-        Url:"1dQFgcuvU802ChbcwsvJ0fwiRh8s6_ZRzw8BDb35Exbw"
+        Url:"1dQFgcuvU802ChbcwsvJ0fwiRh8s6_ZRzw8BDb35Exbw",
+        categuries:"breakfast"
     },
     {
         Title:"قلیون",
-        Url:"1WLPwqTiprCbTEmcIhGK3XDvbCEGtMnFNnGln1jYB4gg"
+        Url:"1WLPwqTiprCbTEmcIhGK3XDvbCEGtMnFNnGln1jYB4gg",
+        categuries:"hooka"
     }
 ]
