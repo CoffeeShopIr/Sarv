@@ -19,6 +19,7 @@ export default function Footer(){
                         <img src="phone.png"  />
                         <p><strong>تلفن: </strong>02165259724</p>
                     </div>
+                    
                     <div>
                         <img src="location.png" />
                         <p><strong>آدرس: </strong>شهریار , میدان معلم , خیابان معلم , نبش کوچه تربیت بدنی , کافه سرو</p>

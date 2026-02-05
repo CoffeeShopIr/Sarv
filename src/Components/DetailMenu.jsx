@@ -4,6 +4,7 @@ import RootNavaigation from "./RootNavigation"
 export default function DetailMenu({data}){
     const dataTitle=useRouteLoaderData("TitleId")
     const {products}=useParams()    
+    
     return(
         <>
             <RootNavaigation data={dataTitle} />
