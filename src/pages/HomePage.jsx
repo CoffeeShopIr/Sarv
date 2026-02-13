@@ -7,9 +7,10 @@ export default function HomePage(){
 
     return(
         <>
-            <Header/>
+            <h1 style={{textAlign:"center"}}>سایت بسته شده است</h1>
+            {/* <Header/>
             <Menu/>
-            <Footer/>
+            <Footer/> */}
         </>
     )
 }
